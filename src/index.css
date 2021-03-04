@@ -1,0 +1,131 @@
+@import "stylesheets/fontawesome.css";
+@import "stylesheets/brands.css";
+@import "stylesheets/regular.css";
+@import "stylesheets/solid.css";
+@import "stylesheets/unsemantic-grid-responsive.css";
+
+@import "stylesheets/chem-elements.css";
+@import "stylesheets/footer.css";
+@import "stylesheets/header.css";
+@import "stylesheets/identities.css";
+@import "stylesheets/intro.css";
+@import "stylesheets/labels.css";
+
+body {
+  /* background: url(./assets/images/plus.svg) #044f67; */
+  background:  #2F575D;
+  background-size: 8em;
+
+  font-size: 1em;
+  margin: 0;
+  min-height: 100vh;
+  padding: 5vh 0;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+html {
+  font-family: "Helvetica Neue", Helvetica, Arial, PingFangTC-Light,
+    "Microsoft YaHei", 微软雅黑, "STHeiti Light", STXihei, "华文细黑", Heiti,
+    黑体, sans-serif;
+  /* margin: 0;
+  padding: 0; */
+}
+
+
+.section {
+  background-size: cover;
+  max-width: 60em;
+  margin: 0 auto;
+  box-shadow: 0 0 0.15em 0.15em rgba(0, 0, 0, 0.125);
+}
+
+.section.intro {
+  padding-top: 1em;
+  margin: 1em auto;
+  background: #DEE1DD;
+  padding-bottom: 1.6em;
+}
+.section.header{
+  padding-top: 1em;
+  background: #99AEAD;
+}
+
+
+/* .section.intro {
+  box-shadow: 0 0 0.15em 0.15em rgba(0, 0, 0, 0.125);
+  background-clip: content-box;
+  background-color: white;
+  margin: 1em 0;
+} */
+
+.no-wrap {
+  display: inline-block;
+}
+
+#container,
+#container > *:first-child {
+  border-top-left-radius: 2em;
+  
+  
+}
+
+#container,
+#container > *:last-child,
+#container > *:last-child > *:last-child {
+  border-bottom-right-radius: 2em;  
+}
+
+.header .small-labels .group::before,
+.header .small-labels .label::before {
+  color: #eee;
+}
+
+
+
+.identities .small-labels .group::before,
+.identities .small-labels .label::before {
+  color: #333;
+}
+
+@media (max-width: 768px) {
+  body {
+    padding: 0;
+  }
+
+  #container {
+    padding: 0;
+  }
+
+  #container,
+  #container > *:first-child {
+    border-top-left-radius: 0;
+  }
+
+  #container,
+  #container > *:last-child,
+  #container > *:last-child > *:last-child {
+    border-bottom-right-radius: 0;
+  }
+
+  .section.header {
+    background: rgba(0, 0, 0, 0.75);
+  }
+
+  .intro .block .split {
+    padding: 0 0.5em;
+    
+  }
+
+  .intro p {
+    border-left: none;
+    padding: 0.2em;
+  }
+}
+
+
+.japanese {
+  font-family:  "ヒラギノ角ゴ Pro W3"
+}
